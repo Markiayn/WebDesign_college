@@ -1,0 +1,26 @@
+.first-div {
+    background-color: lightblue;
+}
+
+.second-div {
+    background-color: lightcoral;
+}
+
+.third-div {
+    background-color: lightyellow;
+}
+
+span {
+    background-color: lightgreen;
+}
+
+img {
+    width: 200px;
+    padding: 25px;
+    outline: 5px solid yellow;
+    margin: 20px;
+}
+
+.images-container {
+    text-align: center;
+}
