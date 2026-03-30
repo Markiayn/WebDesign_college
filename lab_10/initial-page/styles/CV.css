@@ -1,0 +1,132 @@
+/* Базові налаштування */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b3cfe5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0a1931;
+    line-height: 1.6;
+}
+
+
+.topnav {
+    background-color: #333333;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+.content-left {
+    flex: 3;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.sidebar-right {
+    flex: 1;
+    background-color: #f6fafd;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+
+section {
+    margin-bottom: 30px;
+}
+
+h1 { color: #f6fafd; font-size: 42px; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+h2 { color: #0a1931; font-size: 28px; border-bottom: 2px solid #4a7fa7; margin-bottom: 15px; }
+h3 { color: #4a7fa7; margin-bottom: 10px; }
+
+
+.profile {
+    text-align: center;
+}
+
+.profile-img {
+    border-radius: 10px;
+    border: 3px solid #fff;
+    margin-top: 15px;
+}
+
+.education-list{
+    list-style: none;
+
+}
+
+.education-list a{
+    text-decoration: none;
+    color: #5773c5;
+}
+
+
+.hobbies-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.hobby-item {
+    text-align: center;
+}
+
+.hobby-img {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+.skills-list {
+    list-style: square;
+    padding-left: 20px;
+}
+.info-highlight {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #4a7fa7;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #63e2d9;
+    text-decoration: none;
+}
