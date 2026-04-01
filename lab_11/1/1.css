@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.photo {
+    color: #e3f2fd;
+    background-color: #000000;
+    height: 100px;
+    flex: 1 1 150px;
+    transition: transform 0.3s ease;
+}
+
+.photo:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.center-container {
+    margin-top: 20px;
+    background-color: #68d0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-box {
+    color: #e3f2fd;
+    background-color: #438e97;
+    padding: 50px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.text {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Плавність анімації */
+}
+
+
+.center-box:hover .text{
+    transform: scale(1.1);
+}
+
+.card {
+    margin-top: 20px;
+    display: inline-flex;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.card img{
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+.second_card {
+    margin-top: 20px;
+    display: inline-flex;
+    background-color: #4a7fa7;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.second_card img{
+    max-width: 200px;
+    border-radius: 20px;
+    max-height: 200px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .second_card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
