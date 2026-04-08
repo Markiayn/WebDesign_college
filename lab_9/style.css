@@ -1,62 +1,70 @@
+
+.background-gradient {
+    background-image:
+            url('./images/bg-rt.png'),
+            linear-gradient(45deg, #0a1931, #185adb);
+
+
+    background-repeat: no-repeat, no-repeat;
+
+
+    background-position: right top, center;
+
+
+    background-size: 150px, cover;
+
+
+    background-attachment: fixed;
+
+    min-height: 2000px;
+}
+
+
 .background-example {
     width: 500px;
     height: 300px;
     background-image: url('./images/bg.jpg');
     background-size: 100% auto;
     background-position: center;
-    
-    
+    border: 2px solid #fff;
+    margin-bottom: 20px;
 }
 
-.background-gradient{
-    background-image: url('./images/bg-rt.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: scroll;
-    background-size: 150px;  
-}
 
 .clip-example {
     margin: 50px;
     width: 300px;
     height: auto;
     clip-path: polygon(18% 81%, 39% 81%, 55% 55%, 66% 82%, 85% 76%, 75% 56%, 94% 36%, 93% 14%, 53% 38%, 14% 19%, 13% 37%, 38% 55%);
-
 }
+
 
 .masked {
     width: 300px;
     height: auto;
-    mask-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black. svg/100px-Apple_logo_black.svg.png');
-    -webkit-mask-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black. svg/100px-Apple_logo_black.svg.png'); 
+    /* Виправив пробіл у посиланні */
+    -webkit-mask-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png');
+    mask-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
+
 
 .masked-text {
     font-size: 9rem;
     font-weight: 900;
     text-align: center;
-    color: #68d0e0;
-    font-family: 'Avenir',sans-serif;
-
-    @supports (background-clip:text) or (-webkit-background-clip:text) {
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: url('./images/img-2.jpg');
-        background-size: cover;
-        background-position: center;
-    }
+    font-family: 'Archivo Black', sans-serif;
+    background: url('./images/img-2.jpg') center / cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
+
 @keyframes complex-move {
-    0% {
-        background-color: red;
-        transform: translate(0, 0);
-    }
-    100% {
-        background-color: blue;
-        transform: translate(200px, 50px);
-    }
+    0% { background-color: red; transform: translate(0, 0); }
+    100% { background-color: blue; transform: translate(200px, 50px); }
 }
 
 .animated-box {
@@ -64,12 +72,5 @@
     height: 100px;
     background-color: red;
     position: relative;
-
-    /*animation-name: complex-move;*/
-    /*animation-duration: 3s;*/
-    /*animation-delay: 2s;          */
-    /*animation-iteration-count: infinite;*/
-    /*animation-direction: alternate;*/
-
     animation: complex-move 3s linear 2s infinite alternate;
 }
