@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lab_14</title>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<button onclick="showMessage()">Натисни тут</button>
+		<button onclick="openNewWindow()">Відкрити вікно</button>
+
+		<button onclick="confirmMessage()">Перевірка</button>
+		<button onclick="promptMessage()">Введіть ім'я</button>
+
+		<iframe src="https://lolalytics.com/lol/tierlist/?tier=all" width="500" height="700"></iframe>
+
+		<form>
+			<input type="text" id="userName" placeholder="Ваше ім'я">
+			<button type="button" onclick="greetUser()">Привітати</button>
+		</form>
+
+		<input type="text" id="inputField" oninput="showInput()">
+
+		<form onsubmit="handleSubmit(event)">
+			<input type="text" id="dataInput">
+			<button type="submit">Надіслати</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<title>Реєстрація</title>
+		<style>
+            body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; }
+            form { display: flex; flex-direction: column; gap: 15px; width: 300px; }
+            input { padding: 10px; }
+            button { padding: 10px; background: #28a745; color: white; border: none; cursor: pointer; }
+		</style>
+		<script src="form.js" defer></script>
+	</head>
+	<body>
+
+		<form id="regForm">
+			<input type="text" id="name" placeholder="Введіть ім'я">
+			<input type="email" id="email" placeholder="Введіть email">
+			<input type="password" id="pass" placeholder="Введіть пароль (мін. 6 символів)">
+			<button type="button" onclick="validate()">Зареєструватися</button>
+		</form>
+	</body>
+</html>
