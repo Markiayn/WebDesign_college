@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Знайомство з JS</title>
+	<script defer>
+		var photosCount = 4;
+		var currentPhotoIndex = 1;
+
+        function showNextPhoto() {
+            currentPhotoIndex++;
+            if (currentPhotoIndex > photosCount) {
+				currentPhotoIndex = 1;
+			}
+
+            var element = document.getElementById("currentPhoto");
+            element.src = "images/photo" + currentPhotoIndex + ".jpg";
+        }
+
+        function addNextPhoto () {
+            var newImage = document.createElement("img");
+
+            currentPhotoIndex++;
+            if (currentPhotoIndex > photosCount) {
+                currentPhotoIndex = 1;
+            }
+            newImage.src =  "images/photo" + currentPhotoIndex + ".jpg";
+            var containerElem = document.getElementById("gallery");
+            containerElem.appendChild(newImage);
+            
+        }
+	</script>
+</head>
+<body style="background-color: #555555">
+	<h1>Фото курсової</h1>
+	<div id="gallery">
+		<img id="currentPhoto" src="images/photo1.jpg"/>
+	</div>
+	<button id="btn" onclick="showNextPhoto()">Наступне</button>
+	<button id="btnAdd" onclick="addNextPhoto()">Додайте наступне</button>
+</body>
+</html>
