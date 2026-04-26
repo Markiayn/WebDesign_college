@@ -1,0 +1,76 @@
+.sl_ctr {
+    position: relative;
+    width: 100%;       /* Зміни 450px на 100% */
+    max-width: 450px;  /* Максимальна ширина */
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;    /* Центруємо слайдер */
+}
+
+.sldr {
+    position: relative;
+    width: 10000px; /* Залишаємо велику ширину для ряду фото */
+    height: 300px;
+}
+
+/* ОБОВ'ЯЗКОВО: додаємо ці стилі для адаптивності фото */
+.sldr img {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.prv_b, .nxt_b{
+    position:absolute;
+    top:135px;
+    display:block;
+    width:35px;
+    height:35px;
+    cursor:pointer;
+}
+.prv_b:hover, .nxt_b:hover{opacity:.6;}
+.prv_b{
+    left:10px;
+    background:url(../images/prv.png) no-repeat;
+}
+.nxt_b{
+    right:10px;
+    background:url(../images/nxt.png) no-repeat;
+}.sl_ctr{
+    position:relative;
+
+    2
+
+    Лабораторна робота No15 (WEB-технології та WEB-дизайн)
+
+width:450px;
+    height:300px;
+    overflow:hidden;
+}
+.sldr{
+    position:relative;
+    width:10000px;
+    height:300px;
+}
+.sldr img{
+    float:left;
+}
+.prv_b, .nxt_b{
+    position:absolute;
+    top:135px;
+    display:block;
+    width:35px;
+    height:35px;
+    cursor:pointer;
+}
+.prv_b:hover, .nxt_b:hover{opacity:.6;}
+.prv_b{
+    left:10px;
+    background:url(../images/prv.png) no-repeat;
+}
+.nxt_b{
+    right:10px;
+    background:url(../images/nxt.png) no-repeat;
+}
