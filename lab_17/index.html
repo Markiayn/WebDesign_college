@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+
+		<script src="./script.js" defer></script>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<h1>Каталог пристроїв</h1>
+
+		<div class="product-card">
+			<img src="images/pixel9.jpg" alt="Pixel 9 Pro" width="200">
+			<h3>Google Pixel 9 Pro</h3>
+			<button onclick="toggleBlock('pixel9')">Показати / Сховати опис</button>
+			<div id="desc_pixel9" class="description" style="display:none;">
+				Флагманський смартфон з розширеними можливостями штучного інтелекту, найкращою камерою та оновленим дизайном.
+			</div>
+		</div>
+
+		<div class="product-card">
+			<img src="images/pixel8.jpg" alt="Pixel 8" width="200">
+			<h3>Google Pixel 8</h3>
+			<button onclick="toggleBlock('pixel8')">Показати / Сховати опис</button>
+			<div id="desc_pixel8" class="description" style="display:none;">
+				Компактний та потужний смартфон з процесором Tensor G3 та чудовим OLED-дисплеєм.
+			</div>
+		</div>
+
+		<div class="product-card">
+			<img src="images/buds.jpg" alt="Pixel Buds Pro 2" width="200">
+			<h3>Google Pixel Buds Pro 2</h3>
+			<button onclick="toggleBlock('buds')">Показати / Сховати опис</button>
+			<div id="desc_buds" class="description" style="display:none;">
+				Бездротові навушники з активним шумозаглушенням та інтеграцією з екосистемою Google.
+			</div>
+		</div>
+	</body>
+</html>
